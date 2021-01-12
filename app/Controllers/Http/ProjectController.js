@@ -28,7 +28,8 @@ class ProjectController {
 
       return project
     } catch (error) {
-      return response.status(400).send({ error: { message: 'Não foi possivel encontrar o Projeto' } })
+      return response.status(400)
+        .send({ error: { message: 'Não foi possivel encontrar o Projeto' } })
     }
   }
 
